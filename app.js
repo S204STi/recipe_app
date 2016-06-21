@@ -14,10 +14,10 @@ app.use('recipes', recipes);//this is the url to run the middleware on
 
 
 //-----set empty url path to /recipes
-app.get('', function(req, res){
-		console.log('entering redirect');
-		res.redirect('recipes');
-});
+// app.get('', function(req, res){
+// 		console.log('entering redirect');
+// 		res.redirect('recipes');
+// });
 
 var port = process.env.PORT || 3000;
 

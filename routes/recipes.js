@@ -4,10 +4,6 @@ var knex = require('../db/knex'),
     express = require('express'),
     router = express.Router();
 
-// function recipes() {
-//   return knex('recipe_app');
-// }
-
 //GET all recipes view on home load
 router.get('/', function(req, res){
   knex('recipes').then(function(response){

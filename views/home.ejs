@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>All Recipes</title>
+		<link rel="stylesheet" href="/style.css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<header>
+	<h3>All Recipes</h3><a href="new">New Recipe</a>
+</header>
+<body>
+		<fieldset class="col-lg-12">
+				<% recipes.forEach(function(rec){ %>
+						<ul class="col-lg-3">
+								<li>
+										<h1><%= rec.title %></h1>
+								</li>
+								<li>
+										<h3><%= rec.subtitle %></h3>
+								</li>
+								<li>
+										<p><%= rep.genre %></p>
+								</li>
+								<li>
+										<a href="./recipes<%= recipe.id %>">Edit</a>
+								</li>
+						</ul>
+				<% }); %>
+		</fieldset>
+</body>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</html>
